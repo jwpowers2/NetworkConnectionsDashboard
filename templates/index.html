@@ -1,0 +1,51 @@
+<html>
+
+	<head>
+		<meta http-equiv="refresh" content="5">
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Slab&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+	</head>
+	<body>
+		<div class="wrapper">
+		<div class="stats">
+			<h2 class="label">summary</h2>
+			<table>
+				<tbody>
+				<tr>
+					<th>connection type</th>
+					<th>connection count</th>
+				</tr>
+				<tr><td>CLOSE_WAIT</td><td>{{ sdict['CLOSE_WAIT'] }}</td></tr>
+				<tr><td>CLOSED</td><td>{{ sdict['CLOSED'] }}</td></tr>
+				<tr><td>ESTABLISHED</td><td>{{ sdict['ESTABLISHED'] }}</td></tr>
+				<tr><td>FIN_WAIT_1</td><td>{{ sdict['FIN_WAIT_1'] }}</td></tr>
+				<tr><td>FIN_WAIT_2</td><td>{{ sdict['FIN_WAIT_2'] }}</td></tr>
+				<tr><td>LAST_ACK</td><td>{{ sdict['LAST_ACK'] }}</td></tr>
+				<tr><td>LISTEN</td><td>{{ sdict['LISTEN'] }}</td></tr>
+				<tr><td>SYN_RECV</td><td>{{ sdict['SYN_RECV'] }}</td></tr>
+				<tr><td>SYN_SEND</td><td>{{ sdict['SYN_SEND'] }}</td></tr>
+				<tr><td>TIME_WAIT</td><td>{{ sdict['TIME_WAIT'] }}</td></tr>
+				</tbody>
+			</table>
+
+		</div>
+		<div class="processes">
+			<h2 class="label">current connections</h2>
+			<table>
+			    <tr>
+				    <th>source socket</th>
+				    <th>destination socket</th>
+				    <th>connection state</th>
+			{% for process in process_list %}
+			    <tr>
+				    <td>{{ process[3] }}</td>
+				    <td>{{ process[2] }}</td>
+				    <td>{{ process[4] }}</td>
+			    </tr>
+			{% endfor %}
+			</table>
+	 	</div>
+		</div>
+	</body>
+
+</html>

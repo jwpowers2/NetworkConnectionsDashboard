@@ -1,0 +1,58 @@
+*{
+font-family: 'Josefin Slab', serif;
+}
+
+.label{
+margin:0 auto;
+text-decoration:underline;
+}
+th{
+  margin:1em;
+  font-size:1.3em;
+}
+td{
+ margin: 2em;
+}
+tr{
+margin: 1em;
+}
+.wrapper{
+display:block;
+height:20em;
+width:56%;
+margin:0 auto;
+float:center;
+border-right:1px solid black;
+border-left:1px solid black;
+border-top:1px solid black;
+}
+.stats{
+height:10em;
+width:20%;
+display:inline-block;
+margin:0 auto;
+padding:2em;
+
+}
+.stats td {
+  margin: 1em;
+  padding:.4em;
+  text-align:center;
+  font-size:1.3em;
+}
+
+.processes{
+height:10em;
+width:60%;
+display:inline-block;
+margin:0 auto;
+padding:2em;
+}
+.processes td {
+  margin: 1em;
+  padding:.4em;
+  font-size:1.3em;
+}
+tr:nth-child(even) {
+background-color: #f2f2f2;
+}
