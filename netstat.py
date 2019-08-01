@@ -1,4 +1,6 @@
 #!/usr/bin/python
+# current page of code sourced from Abhishek Singh at:
+# https://gist.github.com/abhi-bit/cafd0edcf107ac2f66b9
 
 import pwd
 import os
