@@ -17,30 +17,31 @@
 ### Instructions for install of NCD in a virtual environment (python 2.7 only supported currently)
 
 1. install pip for python if not already installed (this is pip for python2.x) (debian linux instructions)
-    apt-get install python-pip
+   
+    `apt-get install python-pip`
 
 2. use pip to install virtual-env if not already installed
 
-    pip install virtualenv
+    `pip install virtualenv`
 
 3. clone NCD from github 
 
-    git clone https://github.com/jwpowers2/NetworkConnectionsDashboard.git
+    `git clone https://github.com/jwpowers2/NetworkConnectionsDashboard.git`
 
 4. make the cloned repo a virtual environment 
 
-    virtualenv NetworkConnectionsDashboard
+    `virtualenv NetworkConnectionsDashboard`
 
 5.  cd into the project
 
-    cd NetworkConnectionsDashboard
+    `cd NetworkConnectionsDashboard`
 
 6. start the virtual environment
 
-    source bin/activate
+    `source bin/activate`
 
 7.  install dependencies from the requirements.txt file using pip
 
-    pip install -r requirements.txt
+    `pip install -r requirements.txt`
 
 
