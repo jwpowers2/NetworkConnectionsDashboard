@@ -1,7 +1,6 @@
 # Network Connections Dashboard
 
-![alt text][capture]
-[capture]:https://github.com/jwpowers2/NetworkConnectionsDashboard/master/Kazam_screenshot_00000.png
+<img src="https://github.com/jwpowers2/NetworkConnectionsDashboard/master/Kazam_screenshot_00000.png">
 
 ### A simple Web UI Dashboard for monitoring network connections on a Linux Device
 
